@@ -1,0 +1,148 @@
+@font-face {
+    font-family: Open Sans; 
+    src: url(OpenSans.ttf)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eceff4;
+    font-family: "Open Sans", sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.add-contact, .contact-list {
+    width: 320px;
+    background-color: #fff;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    box-shadow: 0px 3px 8px #dcdcdc;
+}
+
+.add-contact .header, .contact-list .header {
+    padding: 20px 25px 20px 25px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.add-contact .header h2, .contact-list .header h2 {
+    font-size: 13px;
+}
+
+.add-contact .content, .contact-list .content {
+    padding: 25px 20px;
+}
+
+#contact-list-content {
+    padding: 0;
+}
+
+.add-contact input[type="text"], .add-contact button, .contact-list .contact-item {
+    font-size: 13px;
+}
+
+.add-contact input[type="text"] {
+    width: 100%;
+    height: 40px;
+    padding-left: 15px;
+    border: 1px solid #eeeeee;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+.add-contact input[type="text"]::placeholder {
+    color: #d3d3d3;
+}
+
+.button-container {
+    margin-top: 5px;
+    text-align: right;
+}
+
+.add-contact button {
+    width: 95px;
+    height: 40px;
+    background-color: #4d59a1;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-list .header {
+    display: flex;
+    align-items: center;
+}
+
+.contact-list .header h2 {
+    margin: 0;
+}
+
+.contact-list .contact-item {
+    align-items: center;
+    height: 70px;
+    padding: 0 20px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.contact-list .contact-item .delete-icon {
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.delete-icon {
+    width: 5px;
+    margin-left: 5px;
+    font-size: 8px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.contact-list .contact-item .name {
+    flex: 1;
+}
+
+.contact-item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.content-box {
+    width: 100%;
+}
+
+.name {
+    font-weight: 600;
+    font-size: 12px;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.contact-list .contact-item .phone {
+    color: #666666;
+}
+
+.phone {
+    text-align: left;
+    font-size: 11px;
+}
